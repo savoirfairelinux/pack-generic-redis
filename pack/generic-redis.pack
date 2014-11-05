@@ -1,0 +1,64 @@
+{
+    "name":"generic-redis",
+
+    "description":"Check Redis",
+
+    "path":"services/",
+
+    "macros":{
+
+        "_REDIS_PORT":                           {"type": "integer",
+                                                  "description": "port of Redis",
+                                                 },
+
+        "_REDIS_CONNECT_WARNING":                {"type": "integer",
+                                                  "description": "warning threshold for the connection time to the server",
+                                                 },
+
+        "_REDIS_CONNECT_CRITICAL":               {"type": "integer",
+                                                  "description": "critical threshold for the connection time to the server",
+                                                 },
+
+        "_REDIS_CONNECTED_CLIENTS_WARNING":      {"type": "integer",
+                                                  "description": "warning threshold for the number of connected clients",
+                                                 },
+
+        "_REDIS_CONNECTED_CLIENTS_CRITICAL":     {"type": "integer",
+                                                  "description": "critical threshold for the number of connected clients",
+                                                 },
+
+        "_REDIS_USED_MEMORY_WARNING":            {"type": "integer",
+                                                  "description": "warninig threshold for the used memory",
+                                                 },
+
+        "_REDIS_USED_MEMORY_CRITICAL":           {"type": "integer",
+                                                  "description": "critical threshold for the used memory",
+                                                 },
+
+        "_REDIS_USED_MEMORY_HUMAN_WARNING":      {"type": "integer",
+                                                  "description": "warning threshold for the used memory human",
+                                                 },
+
+        "_REDIS_USED_MEMORY_HUMAN_CRITICAL":     {"type": "integer",
+                                                  "description": "critical threshold for the used memory human",
+                                                 },
+
+        "_REDIS_USED_MEMORY_RSS_WARNING":        {"type": "integer",
+                                                  "description": "warning threshold for usage of memory rss",
+                                                 },
+
+        "_REDIS_USED_MEMORY_RSS_CRITICAL":       {"type": "integer",
+                                                  "description": "critical threshold for usage of memory rss",
+                                                 },
+
+        "_REDIS_LATENCY_WARNING":                {"type": "integer",
+                                                  "description": "warning threshold for the latency",
+                                                 },
+
+        "_REDIS_LATENCY_CRITICAL":               {"type": "integer",
+                                                  "description": "critical threshold for the latency",
+                                                 },
+
+
+    }
+}
